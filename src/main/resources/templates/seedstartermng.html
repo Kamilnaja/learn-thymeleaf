@@ -9,14 +9,21 @@
 </head>
 <body>
 <div class="seedstarterlist" th:unless="${#lists.isEmpty(allSeedStarters)}">
-    <h2 th:text="#{title.list}"></h2>
+    <h2 th:text="#{title.list}">List of Seed Starters</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th th:text="#{seedstarter.datePlanted}">Date Planted</th>
+            <th th:text="#{seedstarter.covered}">Covered</th>
+            <th th:text="#{seedstarter.features}">Features</th>
+            <th th:text="#{seedstarter.rows}">Rows</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="sb : ${allSeedStarters}"></tr>
+        </tbody>
+    </table>
 </div>
-<table>
-    <thead>
-    <tr>
-        <th th:text="#{seedstarter.datePlanted}">Date Planted</th>
-    </tr>
-    </thead>
-</table>
 </body>
 </html>
