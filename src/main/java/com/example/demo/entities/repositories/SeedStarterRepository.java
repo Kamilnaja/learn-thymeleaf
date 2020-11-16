@@ -15,7 +15,7 @@ public class SeedStarterRepository {
     }
 
     public List<SeedStarter> findAll() {
-        return new ArrayList<SeedStarter>(this.seedStarters);
+        return new ArrayList<>(this.seedStarters);
     }
 
     public void add(final SeedStarter seedStarter) {

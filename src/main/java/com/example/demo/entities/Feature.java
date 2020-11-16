@@ -17,12 +17,13 @@ public enum Feature {
         if (name == null) {
             throw new IllegalArgumentException("Name cannot be null for feature");
         }
-        if (name.toUpperCase().equals("SEEDSTARTER_SPECIFIC_SUBSTRATE")) {
-            return SEEDSTARTER_SPECIFIC_SUBSTRATE;
-        } else if (name.toUpperCase().equals("FERTILIZER")) {
-            return FERTILIZER;
-        } else if (name.toUpperCase().equals("PH_CORRECTOR")) {
-            return PH_CORRECTOR;
+        switch (name.toUpperCase()) {
+            case "SEEDSTARTER_SPECIFIC_SUBSTRATE":
+                return SEEDSTARTER_SPECIFIC_SUBSTRATE;
+            case "FERTILIZER":
+                return FERTILIZER;
+            case "PH_CORRECTOR":
+                return PH_CORRECTOR;
         }
         throw new IllegalArgumentException("Name \"" + name + "\" does not correspond to any Feature");
     }
