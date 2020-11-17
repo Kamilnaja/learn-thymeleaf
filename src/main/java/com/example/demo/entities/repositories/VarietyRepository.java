@@ -42,7 +42,7 @@ public class VarietyRepository {
     }
 
     public List<Variety> findAll() {
-        return new ArrayList<Variety>(this.varietiesById.values());
+        return new ArrayList<>(this.varietiesById.values());
     }
 
     public Variety findById(final Integer id) {
