@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-<div class="seedstarterlist" th:unless="${#lists.isEmpty(allSeedStarters)}">
     <h2 th:text="#{title.list}">List of Seed Starters</h2>
+    <div th:text="${allSeedStarters.size()}"></div >
+
+<div class="seedstarterlist" th:unless="${#lists.isEmpty(allSeedStarters)}">
 
     <table>
         <thead>
