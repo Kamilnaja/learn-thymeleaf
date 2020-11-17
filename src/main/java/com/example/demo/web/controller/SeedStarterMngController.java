@@ -1,11 +1,11 @@
 package com.example.demo.web.controller;
 
-import com.example.demo.entities.Feature;
-import com.example.demo.entities.SeedStarter;
-import com.example.demo.entities.Type;
-import com.example.demo.entities.Variety;
-import com.example.demo.services.SeedStarterService;
-import com.example.demo.services.VarietyService;
+import com.example.demo.business.entities.Feature;
+import com.example.demo.business.entities.SeedStarter;
+import com.example.demo.business.entities.Type;
+import com.example.demo.business.entities.Variety;
+import com.example.demo.business.services.SeedStarterService;
+import com.example.demo.business.services.VarietyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;

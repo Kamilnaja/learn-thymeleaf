@@ -1,7 +1,7 @@
-package com.example.demo.services;
+package com.example.demo.business.services;
 
-import com.example.demo.entities.SeedStarter;
-import com.example.demo.entities.repositories.SeedStarterRepository;
+import com.example.demo.business.entities.SeedStarter;
+import com.example.demo.business.entities.repositories.SeedStarterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.example.demo.entities.repositories;
+package com.example.demo.business.entities.repositories;
 
-import com.example.demo.entities.Variety;
+import com.example.demo.business.entities.Variety;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

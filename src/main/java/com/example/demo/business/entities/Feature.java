@@ -1,4 +1,4 @@
-package com.example.demo.entities;
+package com.example.demo.business.entities;
 
 public enum Feature {
     SEEDSTARTER_SPECIFIC_SUBSTRATE("SEEDSTARTER_SPECIFIC_SUBSTRATE"),

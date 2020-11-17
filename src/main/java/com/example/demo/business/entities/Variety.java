@@ -1,4 +1,4 @@
-package com.example.demo.entities;
+package com.example.demo.business.entities;
 
 public class Variety {
     private Integer id = null;

@@ -1,7 +1,7 @@
 package com.example.demo.web.conversion;
 
-import com.example.demo.entities.Variety;
-import com.example.demo.services.VarietyService;
+import com.example.demo.business.entities.Variety;
+import com.example.demo.business.services.VarietyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 
