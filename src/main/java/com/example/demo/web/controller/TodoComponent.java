@@ -15,6 +15,7 @@ public class TodoComponent {
         List<Todo> todos = new ArrayList<>();
         todos.add(new Todo(1, "Buy milk"));
         todos.add(new Todo(2, "Learn something"));
+        todos.add(new Todo(3, "Check if done works", true));
         model.addAttribute("todos", todos);
         return "todos";
     }

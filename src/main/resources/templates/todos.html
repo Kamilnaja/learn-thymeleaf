@@ -8,6 +8,9 @@
 <a th:href="${@googleSearch.buildUrl('Chocko milk')}">Choco milk</a>
 <ul th:each="todo: ${todos}">
     <li>
+        <label>
+            <input th:checked="${todo.isDone}" type="checkbox">
+        </label>
         <span th:text="${todo.id}"></span>
         <span th:text="${todo.description}"></span>
     </li>

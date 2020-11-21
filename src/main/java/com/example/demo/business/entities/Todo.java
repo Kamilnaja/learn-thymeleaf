@@ -11,6 +11,12 @@ public class Todo {
         this.isDone = false;
     }
 
+    public Todo(long id, String description, boolean isDone) {
+        this.id = id;
+        this.description = description;
+        this.isDone = isDone;
+    }
+
     public long getId() {
         return id;
     }
