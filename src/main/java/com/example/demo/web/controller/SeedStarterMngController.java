@@ -8,8 +8,8 @@ import com.example.demo.business.services.SeedStarterService;
 import com.example.demo.business.services.VarietyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
 import java.util.Calendar;
@@ -48,7 +48,7 @@ public class SeedStarterMngController {
         return seedStarterService.findAll();
     }
 
-    @RequestMapping({"/", "/seedstartermng"})
+    @GetMapping()
     public String showSeedstarters(final SeedStarter seedStarter) {
         seedStarter.setDatePlanted(Calendar.getInstance().getTime());
         return "seedstartermng";
